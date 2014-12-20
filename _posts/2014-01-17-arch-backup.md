@@ -1,21 +1,44 @@
-Attach device, and list disks with:  
-`sudo udisks -l`  
+---
+layout: post
+title: Arch Backup
+---
 
-Mount selected device with  
-`sudo udisks -mount /dev/sdc3`  
+
+<div class="message">
+  Backing up Arch Linux onto an external drive
+</div>
+
+Attach device, and list disks:  
+```
+sudo udisks -l  
+```
+
+Mount selected device:  
+```
+sudo udisks -mount /dev/sdc3  
+```
 
 As root, run:  
-```# rsync -aAXv /* /path/to/backup/folder --exclude={/dev/*,/proc/*,/sys/*,/tmp/*,/run/*,/mnt/*,/media/*,/lost+found}```  
+```
+rsync -aAXv /* /path/to/backup/folder 
+               --exclude={/dev/*,/proc/*,/sys/*,/tmp/*,/run/*,/mnt/*,/media/*,/lost+found}  
+```
 
-Or create a file bin/backup: https://wiki.archlinux.org/index.php/Full_System_Backup_with_rsync  
+Or create a file bin/backup according to the [Arch wiki](https://wiki.archlinux.org/index.php/Full_System_Backup_with_rsync).  
 
 Make it executable:  
-`chmod +x bin/backup`  
+```
+chmod +x bin/backup  
+```
 
 Run file and choose external as target:  
-`sudo bin/backup /media/LINUX/`  
+```
+sudo bin/backup /media/LINUX/  
+```
 
-Unmount with: 
-`sudo umount /path/to/device`  
+Finally, don't forget to unmount:  
+```
+sudo umount /path/to/device  
+```
 
 

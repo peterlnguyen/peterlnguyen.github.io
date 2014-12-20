@@ -1,9 +1,13 @@
 ---
 layout: post
-title: Invalid or Corrupted Database - Arch Linux
+title: Invalid Database - Arch Linux
 ---
 
 ### Update Errors
+Since Arch is a rolling-release distro, it requires regular update and maintenance.  I've gotten away with not updating for a pretty long time, but eventually I just had to sit down, upgrade, and untangle the dependencies and conflicts to upgrade a library I needed.  
+
+
+This is what happened:  
 
 ```
 sudo pacman -Syu
@@ -40,9 +44,9 @@ Changing the SigLevel from "Required DatabaseOption" to "Never" did the trick fo
 SigLevel    = Never
 ```
 
-Further reading:  
-  [1] https://wiki.archlinux.org/index.php/Pacman-key#Disabling_signature_checking  
-  [2] https://bbs.archlinux.org/viewtopic.php?id=135310  
+### Further reading:  
+[Disable Signature Checking](https://wiki.archlinux.org/index.php/Pacman-key#Disabling_signature_checking)  
+[Unrecognized Archive Format](https://bbs.archlinux.org/viewtopic.php?id=13531k0)  
 
 
 

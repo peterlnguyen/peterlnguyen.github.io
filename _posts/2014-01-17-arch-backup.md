@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Arch Backup
+permalink: arch-backup
+tags: linux, arch
 ---
 
 

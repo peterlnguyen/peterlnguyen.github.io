@@ -1,7 +1,14 @@
 ---
 layout: post
-title: Invalid Database - Arch Linux
+title: Invalid Pacman Database - Arch
+permalink: invalid-database-arch-pacman
+tags: linux, arch, pacman
 ---
+
+
+<div class="message">
+  Solving pacman database errors with Arch linux
+</div>
 
 ### Update Errors
 Since Arch is a rolling-release distro, it requires regular update and maintenance.  I've gotten away with not updating for a pretty long time, but eventually I just had to sit down, upgrade, and untangle the dependencies and conflicts to upgrade a library I needed.  

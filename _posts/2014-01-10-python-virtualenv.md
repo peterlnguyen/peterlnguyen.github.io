@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Python Virtualenv
+permalink: python-virtualenv
+tags: python, linux
 ---
 
 

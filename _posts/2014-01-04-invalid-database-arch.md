@@ -10,7 +10,7 @@ tags: linux, arch, pacman
   Solving pacman database errors with Arch linux
 </div>
 
-### Update Errors
+### Update errors
 Since Arch is a rolling-release distro, it requires regular update and maintenance.  I've gotten away with not updating for a pretty long time, but eventually I just had to sit down, upgrade, and untangle the dependencies and conflicts to upgrade a library I needed.  
 
 
@@ -56,6 +56,4 @@ SigLevel    = Never
 [Unrecognized Archive Format](https://bbs.archlinux.org/viewtopic.php?id=13531k0)  
 
 
-
-
-
+-----

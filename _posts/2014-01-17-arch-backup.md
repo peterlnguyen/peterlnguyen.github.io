@@ -7,18 +7,18 @@ tags: linux, arch
 
 
 <div class="message">
-  Backing up Arch Linux onto an external drive
+  Backing up Arch linux onto an external drive
 </div>
 
-Attach device, and list disks:  
-```
-sudo udisks -l  
-```
+### Attaching your device
 
-Mount selected device:  
-```
-sudo udisks -mount /dev/sdc3  
-```
+List your devices:  
+`sudo udisks -l`  
+
+Mount selected device  
+`sudo udisks -mount /dev/sdc3`  
+
+### Create backup
 
 As root, run:  
 ```
@@ -38,9 +38,14 @@ Run file and choose external as target:
 sudo bin/backup /media/LINUX/  
 ```
 
+### Unmount
+
 Finally, don't forget to unmount:  
 ```
 sudo umount /path/to/device  
 ```
 
+And voila, there's your entire backup process!
 
+
+-----
